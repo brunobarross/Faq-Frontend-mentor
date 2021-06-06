@@ -134,6 +134,7 @@ li {
   left: -100px;
   top: 180px;
   z-index: 1000;
+  animation: caixinha 0.5s infinite alternate;
 }
 @media screen and (max-width: 1024px) {
   .faq:before {
@@ -141,6 +142,14 @@ li {
   }
 }
 
+@keyframes caixinha {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
 .imagem__faq {
   position: relative;
   background: url("../img/bg-pattern-desktop.svg");
